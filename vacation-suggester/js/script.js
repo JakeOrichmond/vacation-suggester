@@ -4,11 +4,11 @@ $(document).ready(function() {
 
   $("form#radios").submit(function(event) {
 
-    var place = ("input:radio[name=favePlace]:checked").val();
-    var temperature = ("input:radio[name=temp]:checked").val();
-    var scared = ("input:radio[name=afraid]:checked").val();
-    var bodyOfWater = ("input:radio[name=water]:checked").val();
-    var tree = ("input:radio[name=tree]:checked").val();
+      var place = ("input:radio[name=fave]:checked").val();
+      var temperature = ("input:radio[name=temp]:checked").val();
+      var scared = ("input:radio[name=afraid]:checked").val();
+      var bodyOfWater = ("input:radio[name=water]:checked").val();
+      var tree = ("input:radio[name=tree]:checked").val();
 
     console.log("did we make it here?")
 
@@ -31,7 +31,7 @@ $(document).ready(function() {
     //   $(".craterLake").addClass("showpic");
     // } else if (place === "jungle" && temperature === "hot" && scared === "sharks" && bodyOfWater === "river" && tree === palm) {
     //   $(".showpic").removeClass("showpic");
-    //   $(".amazon").addClass("showpic");
+    //   $(".amazon").addClass("showpic"); }
     event.preventDefault();
   });
 });
