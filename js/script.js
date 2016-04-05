@@ -4,17 +4,17 @@ $(document).ready(function() {
 
   $("form#radios").submit(function(event) {
 
-      var place = ("input:radio[name=fave]:checked").val();
-      var temperature = ("input:radio[name=temp]:checked").val();
-      var scared = ("input:radio[name=afraid]:checked").val();
-      var bodyOfWater = ("input:radio[name=water]:checked").val();
-      var tree = ("input:radio[name=tree]:checked").val();
+      var place = $("input:radio[name=fave]:checked").val();
+      var temperature = $("input:radio[name=temp]:checked").val();
+      var scared = $("input:radio[name=afraid]:checked").val();
+      var bodyOfWater = $("input:radio[name=water]:checked").val();
+      var tree = $("input:radio[name=tree]:checked").val();
 
     console.log("did we make it here?")
 
     if (place === "forest") {
-      $(".showpic").removeClass("showpic");
-      $(".belize").addClass("showpic");
+      $(".belize").removeClass(".picture");
+      $(".belize").addClass(".picture");
     }
     console.log("Here 3")
 
