@@ -1,3 +1,28 @@
-.picture {
+.gone {
   display: none;
+}
+
+img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+#craterLake {
+  text-align: center;
+}
+
+#amazon {
+  text-align: center;
+}
+
+#belize {
+  text-align: center;
+}
+
+#jail {
+  text-align: center;
 }

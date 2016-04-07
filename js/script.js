@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  console.log("document loading")
+  console.log("document loaded")
 
   $("form#radios").submit(function(event) {
 
@@ -13,10 +13,26 @@ $(document).ready(function() {
     console.log("did we make it here?")
 
     if (place === "forest") {
-      $(".belize").removeClass(".picture");
-      $(".belize").addClass(".picture");
+      $("#craterLake").removeClass("gone");
     }
-    console.log("Here 3")
+
+    else if (place === "beach") {
+      $("#belize").removeClass("gone");
+    }
+
+    else if (place === "jungle") {
+      $("#amazon").removeClass("gone");
+    }
+
+    else if (place === "mountain") {
+      $("#craterLake").removeClass("gone");
+    }
+
+
+    else {
+      $("#jail").removeClass("gone");
+    }
+
 
 
 

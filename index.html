@@ -9,8 +9,10 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="jumbotron">
     <h1>Vacation Getaway</h1>
+  </div>
+  <div class="container">
     <p>Helllo there!!! Would you like to go on a Vacation to somewhere other than your backyard and have a wild adventure?! Of course you do!!! Who doesn't? Well guess whart!? We will give you an all expense paid trip for you and three other people you want to take with you on this vacation. <em>We all know it ain't no fun if the homies can't have none!</em> But!!! But!!!! Wait, there is a catch! Threre is always a catch! Nothing is free!! The catch is that you have to answer the questions provided to you! Oh, and uuuh we choose the place. <strong>Good Luck!!!<strong></p>
     </div>
     <form id="radios">
@@ -25,28 +27,32 @@
 
 
             <label class="radio-inline">
-              <input type="radio" name="fave" id="forest">
+              <input type="radio" name="fave" id="forest" value="forest">
               Forest
             </label>
 
 
 
             <label class="radio-inline">
-              <input type="radio" name="fave" id="beach">
+              <input type="radio" name="fave" id="beach" value="beach">
               Beach
             </label>
 
 
 
             <label class="radio-inline">
-              <input type="radio" name="fave" id="jungle">
+              <input type="radio" name="fave" id="jungle" value="jungle">
               Jungle
             </label>
 
 
             <label class="radio-inline">
-              <input type="radio" name="fave" id="mountain">
+              <input type="radio" name="fave" id="mountain" value="mountain">
               Mountain
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="fave" id="noneOfThese" value="noneOfThese">
+              None of these!!!
             </label>
 
           </div>
@@ -54,6 +60,8 @@
       </div>
 
       <!-- Question 2 -->
+
+
 
       <div class="container" id="question2">
         <h2>Do you like the hot or cold?</h2>
@@ -63,13 +71,13 @@
           <div class="col-md-12">
 
             <label class="radio-inline">
-              <input type="radio" name="temp" id="hot">
+              <input type="radio" name="temp" id="hot" value="hot">
               Hot
             </label>
 
 
             <label class="radio-inline">
-              <input type="radio" name="temp" id="cold">
+              <input type="radio" name="temp" id="cold" value="cold">
               Cold
             </label>
 
@@ -87,23 +95,23 @@
           <div class="col-md-12">
 
             <label class="radio-inline">
-              <input type="radio" name="afraid" id="spiders">
+              <input type="radio" name="afraid" id="spiders" value="spiders">
               Spiders
             </label>
 
 
             <label class="radio-inline">
-              <input type="radio" name="afraid" id="sharks">
+              <input type="radio" name="afraid" id="sharks" value="sharks">
               Sharks
             </label>
 
             <label class="radio-inline">
-              <input type="radio" name="afraid" id="snakes">
+              <input type="radio" name="afraid" id="snakes" value="snakes">
               Snakes
             </label>
 
             <label class="radio-inline">
-              <input type="radio" name="afraid" id="giantSquid">
+              <input type="radio" name="afraid" id="giantSquid" value="giantSquid">
               Giant Squid
             </label>
 
@@ -121,7 +129,7 @@
           <div class="col-md-12">
 
             <label class="radio-inline">
-              <input type="radio" name="water" id="ocean">
+              <input type="radio" name="water" id="ocean" value="ocean">
               Ocean
             </label>
 
@@ -133,7 +141,7 @@
 
 
             <label class="radio-inline">
-              <input type="radio" name="water" id="lake">
+              <input type="radio" name="water" id="lake" value="ocean">
               Lake
             </label>
 
@@ -151,12 +159,12 @@
           <div class="col-md-12">
 
             <label class="radio-inline">
-              <input type="radio" name="tree" id="palm">
+              <input type="radio" name="tree" id="palm" value="palm">
               Palm Tree
             </label>
 
             <label class="radio-inline">
-              <input type="radio" name="tree" id="pine">
+              <input type="radio" name="tree" id="pine" value="pine">
               Pine Tree
             </label>
             <div>
@@ -167,23 +175,23 @@
       </div>
     </form>
 
-      <div class="amazon picture">
+      <div class="gone" id="amazon">
         <h2>You're going to the AMAZON!!!!!!!!</h2>
         <img src="img/amazon.png">
       </div>
 
-      <div class="belize picture">
+      <div class="gone" id="belize">
         <h2>You're going to the BELIZE!!!!!!!!</h2>
         <img src="img/belize.png">
       </div>
 
-      <div class="craterLake picture">
+      <div class="gone" id="craterLake">
         <h2>You're going to the CRATER LAKE!!!!!!!!</h2>
         <img src="img/CraterLake.jpg">
       </div>
 
-      <div class="jail picture">
-        <h2>You're going to the CRATER LAKE!!!!!!!!</h2>
+      <div class="gone" id="jail">
+        <h2>You're going to JAIL!!!!!!!!</h2>
         <img src="img/jail.jpg">
       </div>
 
